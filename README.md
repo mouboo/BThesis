@@ -15,4 +15,5 @@
 **EMG_values.sps:** SPSS syntax file to use with EMG_values.xlsx (remember to change your path for importing data).
 
 All code in this repository is subject to the Unlicense.
+
 Images are subject to different CC licences, see respective subdirectory.
