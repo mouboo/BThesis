@@ -40,12 +40,12 @@ barcolors=['#777777', '#cccccc']
 fig, ax = plt.subplots(figsize=(6, 3.5))
 
 ax.bar(x,means,width=1, color=barcolors)
-ax.set_title('Muskelaktivering utan adduktion och med adduktion')
+ax.set_title('Muskelaktivitet utan adduktion och med adduktion')
 ax.set_xlim([-0.5, 10.5])
 ax.set_ylim([0, 100])
 ax.set_xticks([1.5,5,8.5])
 ax.set_xticklabels(['DPI', 'DPP','INF'])
-ax.set_ylabel('Normaliserad\n muskelaktivering (%MVIC)')
+ax.set_ylabel('Normaliserad\n muskelaktivitet (%MVIC)')
 ax.set_xlabel('Muskel')
 
 plt.errorbar(x, means, yerr=sds, ls='none', capsize=5, color='black', elinewidth=1)
@@ -98,7 +98,7 @@ axDPI.set_xlim(xlim)
 axDPI.set_ylim(0,50)
 axDPI.set_xticks(x)
 axDPI.set_xticklabels(['Utan\nadduktion','Med\nadduktion'])
-axDPI.set_ylabel('Normaliserad muskelaktivering (%MVIC)')
+axDPI.set_ylabel('Normaliserad\nmuskelaktivitet (%MVIC)')
 
 # DPP
 for i in range(0,len(df)):
